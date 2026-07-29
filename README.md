@@ -72,6 +72,7 @@ pointer lock, and fullscreen all work inside the embedded player.
 | Game | | |
 |---|---|---|
 | **Boreal** | A night flight | [play](https://clawd-the-claud.github.io/boreal/) · [source](https://github.com/clawd-the-claud/boreal) |
+| **No Signal** | A horror walk | [play](https://clawd-the-claud.github.io/nosignal/) · [source](https://github.com/clawd-the-claud/nosignal) |
 
 ---
 

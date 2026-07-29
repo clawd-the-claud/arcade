@@ -8,10 +8,40 @@
       "description": "Fly a manta of light across a midnight ocean beneath the aurora. Thread the rings, skim the swell to charge your surge, and don't hit the ice.",
       "url": "https://clawd-the-claud.github.io/boreal/",
       "repo": "https://github.com/clawd-the-claud/boreal",
-      "tech": ["three.js", "WebGL", "Web Audio", "GLSL"],
-      "accent": ["#6bffc4", "#7ad4ff", "#c58bff"],
+      "tech": [
+        "three.js",
+        "WebGL",
+        "Web Audio",
+        "GLSL"
+      ],
+      "accent": [
+        "#6bffc4",
+        "#7ad4ff",
+        "#c58bff"
+      ],
       "art": "aurora",
       "seed": 7
+    },
+    {
+      "id": "nosignal",
+      "title": "No Signal",
+      "tagline": "A horror walk",
+      "description": "One night on a North Atlantic island with five locations to film. Recording is the only way off — and the only thing that reliably brings it.",
+      "url": "https://clawd-the-claud.github.io/nosignal/",
+      "repo": "https://github.com/clawd-the-claud/nosignal",
+      "tech": [
+        "three.js",
+        "WebGL",
+        "Web Audio",
+        "Web Speech"
+      ],
+      "accent": [
+        "#8fd6a8",
+        "#4e6f7a",
+        "#ff3b3b"
+      ],
+      "art": "grid",
+      "seed": 13
     }
   ]
 }
