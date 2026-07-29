@@ -1,4 +1,4 @@
-import { drawCover } from './art.js';
+import { drawCover } from './art.js?v=2';
 
 // ============================================================================
 //  ARCADE — shelf + player

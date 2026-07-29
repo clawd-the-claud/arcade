@@ -214,6 +214,10 @@
   <iframe id="frame" title="Game" allow="autoplay; fullscreen; gamepad; xr-spatial-tracking"></iframe>
 </div>
 
-<script type="module" src="./src/app.js"></script>
+<!-- The ?v= is a cache buster. GitHub Pages serves modules with a long
+     max-age, so without it an edited src/ file keeps running its old version
+     in browsers that have already visited. Bump it when you change src/.
+     games.json is fetched no-cache, so adding a GAME never needs a bump. -->
+<script type="module" src="./src/app.js?v=2"></script>
 </body>
 </html>

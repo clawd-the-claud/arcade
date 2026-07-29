@@ -14,7 +14,8 @@ full-bleed in an iframe so you never leave the page.
 ## Adding a game
 
 Append one entry to [`games.json`](games.json). That's the whole process — no
-build step, no image to make, no code to touch.
+build step, no image to make, no code to touch. The registry is fetched with
+`no-cache`, so a new game shows up on the next reload.
 
 ```json
 {
@@ -98,3 +99,12 @@ The drifting aurora behind the page is a 160×90 canvas scaled up by CSS.
 Upscaling a tiny buffer gives smoother falloff than any blur filter and costs
 almost nothing, so it can animate indefinitely without touching the frame
 budget. It pauses when the tab is hidden.
+
+## A note on caching
+
+`src/` modules are loaded with a `?v=N` query string. GitHub Pages serves them
+with a long `max-age`, so without it an edited module keeps running its old
+version for anyone who has visited before — changes appear to do nothing. If
+you edit anything under `src/`, bump `v` in `index.html` (and on the `art.js`
+import inside `app.js`). Adding a game doesn't need it; `games.json` is fetched
+`no-cache`.
