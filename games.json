@@ -1,0 +1,17 @@
+{
+  "$comment": "Add a game by appending one entry. `art` picks a procedural cover generator from src/art.js — no image files anywhere.",
+  "games": [
+    {
+      "id": "boreal",
+      "title": "Boreal",
+      "tagline": "A night flight",
+      "description": "Fly a manta of light across a midnight ocean beneath the aurora. Thread the rings, skim the swell to charge your surge, and don't hit the ice.",
+      "url": "https://clawd-the-claud.github.io/boreal/",
+      "repo": "https://github.com/clawd-the-claud/boreal",
+      "tech": ["three.js", "WebGL", "Web Audio", "GLSL"],
+      "accent": ["#6bffc4", "#7ad4ff", "#c58bff"],
+      "art": "aurora",
+      "seed": 7
+    }
+  ]
+}
