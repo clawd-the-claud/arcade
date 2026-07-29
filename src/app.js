@@ -86,12 +86,19 @@ const player = $('player'), frame = $('frame'), bar = $('bar');
 let playing = false;
 
 function launch(g) {
+  if (playing) return;
   frame.src = g.url;
   $('nowTitle').textContent = g.title;
   player.classList.add('on');
   player.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
-  requestAnimationFrame(() => player.classList.add('vis'));
+
+  // Flush layout so the opacity transition has a start value to animate from.
+  // Deferring this to requestAnimationFrame works right up until the tab is
+  // backgrounded mid-launch, at which point rAF is throttled, the transition
+  // stalls part-way, and the overlay is left translucent over the shelf.
+  void player.offsetWidth;
+  player.classList.add('vis');
   playing = true;
 
   // Show the chrome briefly, then let it hide so it doesn't sit over the game.
